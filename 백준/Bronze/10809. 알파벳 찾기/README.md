@@ -28,3 +28,32 @@
 
 <p>만약, 어떤 알파벳이 단어에 포함되어 있지 않다면 -1을 출력한다. 단어의 첫 번째 글자는 0번째 위치이고, 두 번째 글자는 1번째 위치이다.</p>
 
+------
+
+1. 바로 바로 반환해주는 방식
+
+'''python
+s= input()
+alpha = 'abcdefghijklmnopqrstuvwxyz'
+
+for i in alpha:
+    if i in s:
+        print(s.index(i), end=' ')
+    else:
+        print(-1, end=' ')
+    
+# end 사용 !!
+'''
+
+
+2. find 사용하는 방식
+
+'''python
+s = input()
+
+for x in 'abcdefghijklmnopqrstuvwxyz':
+    print(s.find(x), end= ' ')
+    
+# find는 어떤 찾는 문자가 문자열 안에서 첫 번째 위치한 순서를 숫자로 출력한다.
+# 만약 찾는 문자가 없을 경우 -1 을 출력한다. 
+'''
