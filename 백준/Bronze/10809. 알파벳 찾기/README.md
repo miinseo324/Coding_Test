@@ -32,7 +32,7 @@
 
 1. 바로 바로 반환해주는 방식
 
-'''python
+```python
 s= input()
 alpha = 'abcdefghijklmnopqrstuvwxyz'
 
@@ -41,19 +41,17 @@ for i in alpha:
         print(s.index(i), end=' ')
     else:
         print(-1, end=' ')
-    
-# end 사용 !!
-'''
-
+```
+end 사용 !!
 
 2. find 사용하는 방식
 
-'''python
+```python
 s = input()
 
 for x in 'abcdefghijklmnopqrstuvwxyz':
     print(s.find(x), end= ' ')
-    
-# find는 어떤 찾는 문자가 문자열 안에서 첫 번째 위치한 순서를 숫자로 출력한다.
-# 만약 찾는 문자가 없을 경우 -1 을 출력한다. 
-'''
+
+```
+find는 어떤 찾는 문자가 문자열 안에서 첫 번째 위치한 순서를 숫자로 출력한다.
+만약 찾는 문자가 없을 경우 -1 을 출력한다. 
