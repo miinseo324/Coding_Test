@@ -30,3 +30,18 @@
 
  <p>첫째 줄에 ascending, descending, mixed 중 하나를 출력한다.</p>
 
+----
+
+간단한 문제인데 너무 복잡하게 풀었다.\n
+단순 정렬인지 확인하는 문제
+
+```python
+a = list(map(int, input().split()))
+ 
+if a == sorted(a):
+    print('ascending')
+elif a == sorted(a, reverse=True):
+    print('descending')
+else:
+    print('mixed')
+```
